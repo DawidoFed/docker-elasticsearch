@@ -20,7 +20,7 @@ chmod 777 elastic-search
 ***Default*** 
 
 ```bash
-docker run -it -v `pwd`/elastic-search:/usr/share/elasticsearch/data DawidoFed/docker-elasticsearch:latest
+docker run -it -v `pwd`/elastic-search:/usr/share/elasticsearch/data dawidoFed/docker-elasticsearch:latest
 ```
 
 ***Docker compose***
@@ -29,7 +29,7 @@ docker run -it -v `pwd`/elastic-search:/usr/share/elasticsearch/data DawidoFed/d
 version: '1'
 services:
   search:
-    image: DawidoFed/docker-elasticsearch:latest
+    image: dawidofed/docker-elasticsearch:latest
     volumes:
       - ./elastic-search:/usr/share/elasticsearch/data
 ```
@@ -40,7 +40,7 @@ services:
 version: '3'
 services:
   search:
-    image: DawidoFed/docker-elasticsearch:latest
+    image: dawidofed/docker-elasticsearch:latest
     volumes:
       - ./elastic-search:/usr/share/elasticsearch/data
     deploy:
@@ -53,7 +53,7 @@ services:
 version: '2'
 services:
   search:
-    image: DawidoFed/docker-elasticsearch:latest
+    image: dawidofed/docker-elasticsearch:latest
     volumes:
       - ./elastic-search:/usr/share/elasticsearch/data
     environment:

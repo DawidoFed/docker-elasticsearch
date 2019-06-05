@@ -2,7 +2,7 @@ services:
   - docker
 
 script:
-  - docker build -t DawidoFed/docker-elasticsearch:latest .
+  - docker build -t dawidofed/docker-elasticsearch:latest .
 
   - mkdir elastic-search
   - chmod 777 elastic-search
